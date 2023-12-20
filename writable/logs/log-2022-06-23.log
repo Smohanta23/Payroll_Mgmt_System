@@ -1,0 +1,367 @@
+CRITICAL - 2022-06-23 09:35:44 --> Class "App\Models\Transaction" not found
+in APPPATH\Controllers\Main.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Main->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-23 09:46:56 --> Invalid file: pages/departments/list.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/departments/list.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/departments/list', [], true)
+ 3 APPPATH\Controllers\Main.php(125): view('pages/departments/list', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->departments()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-23 10:48:13 --> Not unique table/alias: 'designations'
+CRITICAL - 2022-06-23 10:48:13 --> Not unique table/alias: 'designations'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `designations`
+INNER JOIN `departments` ON `employees`.`department_id` = `departments`.`id`
+INNER JOIN `designations` ON `employees`.`designation_id` = `designations`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `designations`
+INNER JOIN `departments` ON `employees`.`department_id` = `departments`.`id`
+INNER JOIN `designations` ON `employees`.`designation_id` = `designations`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `designations`
+INNER JOIN `departments` ON `employees`.`department_id` = `departments`.`id`
+INNER JOIN `designations` ON `employees`.`designation_id` = `designations`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `designations`
+INNER JOIN `departments` ON `employees`.`department_id` = `departments`.`id`
+INNER JOIN `designations` ON `employees`.`designation_id` = `designations`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Main.php(277): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->employees()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-23 10:49:22 --> Not unique table/alias: 'designations'
+CRITICAL - 2022-06-23 10:49:22 --> Not unique table/alias: 'designations'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `designations`
+INNER JOIN `departments` ON `employees`.`department_id` = `departments`.`id`
+INNER JOIN `designations` ON `employees`.`designation_id` = `designations`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `designations`
+INNER JOIN `departments` ON `employees`.`department_id` = `departments`.`id`
+INNER JOIN `designations` ON `employees`.`designation_id` = `designations`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `designations`
+INNER JOIN `departments` ON `employees`.`department_id` = `departments`.`id`
+INNER JOIN `designations` ON `employees`.`designation_id` = `designations`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `designations`
+INNER JOIN `departments` ON `employees`.`department_id` = `departments`.`id`
+INNER JOIN `designations` ON `employees`.`designation_id` = `designations`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Main.php(277): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->employees()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-23 10:58:50 --> Undefined variable $departments
+in APPPATH\Views\pages\employees\add.php on line 71.
+ 1 APPPATH\Views\pages\employees\add.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'APPPATH\\Views\\pages\\employees\\add.php', 71)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\employees\\add.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/employees/add', [], true)
+ 5 APPPATH\Controllers\Main.php(314): view('pages/employees/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->employee_add()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-23 11:01:49 --> Undefined variable $firstname
+in APPPATH\Controllers\Main.php on line 289.
+ 1 APPPATH\Controllers\Main.php(289): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $firstname', 'APPPATH\\Controllers\\Main.php', 289)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->employee_add('$1')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-23 11:02:32 --> Cannot add or update a child row: a foreign key constraint fails (`payroll_db`.`employees`, CONSTRAINT `employees_department_id_foreign` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION)
+CRITICAL - 2022-06-23 11:02:32 --> Cannot add or update a child row: a foreign key constraint fails (`payroll_db`.`employees`, CONSTRAINT `employees_department_id_foreign` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `employees` (`code`, `first_name`, `middle_name`, `last_name`, `dob`, `gender`, `email`, `date_hired`, `salary`, `status`) VALUES (\'6231415\', \'Mark\', \'D\', \'Cooper\', \'1997-06-23\', \'Male\', \'mcooper@mail.com\', \'2020-10-14\', \'55000\', \'Active\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `employees` (`code`, `first_name`, `middle_name`, `last_name`, `dob`, `gender`, `email`, `date_hired`, `salary`, `status`) VALUES (\'6231415\', \'Mark\', \'D\', \'Cooper\', \'1997-06-23\', \'Male\', \'mcooper@mail.com\', \'2020-10-14\', \'55000\', \'Active\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `employees` (`code`, `first_name`, `middle_name`, `last_name`, `dob`, `gender`, `email`, `date_hired`, `salary`, `status`) VALUES (\'6231415\', \'Mark\', \'D\', \'Cooper\', \'1997-06-23\', \'Male\', \'mcooper@mail.com\', \'2020-10-14\', \'55000\', \'Active\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `employees` (`code`, `first_name`, `middle_name`, `last_name`, `dob`, `gender`, `email`, `date_hired`, `salary`, `status`) VALUES (:code.1:, :first_name:, :middle_name:, :last_name:, :dob:, :gender:, :email:, :date_hired:, :salary:, :status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Main.php(303): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->employee_add('$1')
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-23 11:17:36 --> Undefined variable $departments
+in APPPATH\Views\pages\employees\edit.php on line 71.
+ 1 APPPATH\Views\pages\employees\edit.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'APPPATH\\Views\\pages\\employees\\edit.php', 71)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\employees\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/employees/edit', [], true)
+ 5 APPPATH\Controllers\Main.php(360): view('pages/employees/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->employee_edit('27')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-23 11:19:03 --> Unknown column 'address' in 'field list'
+CRITICAL - 2022-06-23 11:19:03 --> Unknown column 'address' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `employees` SET `code` = \'6231415\', `first_name` = \'Mark\', `middle_name` = \'D\', `last_name` = \'Cooper\', `dob` = \'1997-06-23\', `gender` = \'Male\', `email` = \'mcooper@mail.com\', `address` = \'Sample Address\', `date_hired` = \'2020-10-14\', `salary` = \'55000.00\', `status` = \'Active\'
+WHERE `id` = \'27\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `employees` SET `code` = \'6231415\', `first_name` = \'Mark\', `middle_name` = \'D\', `last_name` = \'Cooper\', `dob` = \'1997-06-23\', `gender` = \'Male\', `email` = \'mcooper@mail.com\', `address` = \'Sample Address\', `date_hired` = \'2020-10-14\', `salary` = \'55000.00\', `status` = \'Active\'
+WHERE `id` = \'27\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `employees` SET `code` = \'6231415\', `first_name` = \'Mark\', `middle_name` = \'D\', `last_name` = \'Cooper\', `dob` = \'1997-06-23\', `gender` = \'Male\', `email` = \'mcooper@mail.com\', `address` = \'Sample Address\', `date_hired` = \'2020-10-14\', `salary` = \'55000.00\', `status` = \'Active\'
+WHERE `id` = \'27\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `employees` SET `code` = :code.1:, `first_name` = :first_name:, `middle_name` = :middle_name:, `last_name` = :last_name:, `dob` = :dob:, `gender` = :gender:, `email` = :email:, `address` = :address:, `date_hired` = :date_hired:, `salary` = :salary:, `status` = :status:
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Controllers\Main.php(350): CodeIgniter\Model->update()
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->employee_edit('27')
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-23 11:29:02 --> Column 'id' in where clause is ambiguous
+CRITICAL - 2022-06-23 11:29:02 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `employees`.*, CONCAT(employees.last_name, \', \', `employees`.`first_name`, COALESCE(CONCAT(\' \', employees.middle_name), \'\')) as `name`, CONCAT(departments.code, \' - \', departments.name) as department, CONCAT(designations.code, \' - \', designations.name) as designation
+FROM `employees`
+INNER JOIN `departments` ON `employees`.`department_id` = `departments`.`id`
+INNER JOIN `designations` ON `employees`.`designation_id` = `designations`.`id`
+WHERE `id` = 27
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `employees`.*, CONCAT(employees.last_name, \', \', `employees`.`first_name`, COALESCE(CONCAT(\' \', employees.middle_name), \'\')) as `name`, CONCAT(departments.code, \' - \', departments.name) as department, CONCAT(designations.code, \' - \', designations.name) as designation
+FROM `employees`
+INNER JOIN `departments` ON `employees`.`department_id` = `departments`.`id`
+INNER JOIN `designations` ON `employees`.`designation_id` = `designations`.`id`
+WHERE `id` = 27
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `employees`.*, CONCAT(employees.last_name, \', \', `employees`.`first_name`, COALESCE(CONCAT(\' \', employees.middle_name), \'\')) as `name`, CONCAT(departments.code, \' - \', departments.name) as department, CONCAT(designations.code, \' - \', designations.name) as designation
+FROM `employees`
+INNER JOIN `departments` ON `employees`.`department_id` = `departments`.`id`
+INNER JOIN `designations` ON `employees`.`designation_id` = `designations`.`id`
+WHERE `id` = 27
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `employees`.*, CONCAT(employees.last_name, \', \', `employees`.`first_name`, COALESCE(CONCAT(\' \', employees.middle_name), \'\')) as `name`, CONCAT(departments.code, \' - \', departments.name) as department, CONCAT(designations.code, \' - \', designations.name) as designation
+FROM `employees`
+INNER JOIN `departments` ON `employees`.`department_id` = `departments`.`id`
+INNER JOIN `designations` ON `employees`.`designation_id` = `designations`.`id`
+WHERE `id` = 27
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Main.php(388): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->employee_view('27')
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-23 11:52:16 --> Table 'payroll_db.payrolls' doesn't exist
+CRITICAL - 2022-06-23 11:52:16 --> Table 'payroll_db.payrolls' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `payrolls`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `payrolls`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `payrolls`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `payrolls`', [], false)
+ 5 SYSTEMPATH\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Main.php(401): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->payrolls()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-23 13:24:45 --> Unknown column 'employee.id' in 'on clause'
+CRITICAL - 2022-06-23 13:24:45 --> Unknown column 'employee.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `payslips`
+INNER JOIN `payrolls` ON `payslips`.`payroll_id` = `payrolls`.`id`
+INNER JOIN `employees` ON `payslips`.`employee_id` = `employee`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `payslips`
+INNER JOIN `payrolls` ON `payslips`.`payroll_id` = `payrolls`.`id`
+INNER JOIN `employees` ON `payslips`.`employee_id` = `employee`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `payslips`
+INNER JOIN `payrolls` ON `payslips`.`payroll_id` = `payrolls`.`id`
+INNER JOIN `employees` ON `payslips`.`employee_id` = `employee`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `payslips`
+INNER JOIN `payrolls` ON `payslips`.`payroll_id` = `payrolls`.`id`
+INNER JOIN `employees` ON `payslips`.`employee_id` = `employee`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Main.php(492): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->payslips()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-23 13:24:52 --> Unknown column 'payrolls.name' in 'field list'
+CRITICAL - 2022-06-23 13:24:52 --> Unknown column 'payrolls.name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `payslips`.*, CONCAT(employees.last_name, \', \', `employees`.`first_name`, COALESCE(CONCAT(\' \', employees.middle_name), \'\')) as `employee_name`, `employees`.`code` as `employee_code`, `payrolls`.`code` as `payroll_code`, `payrolls`.`name` as `payroll_name`
+FROM `payslips`
+INNER JOIN `payrolls` ON `payslips`.`payroll_id` = `payrolls`.`id`
+INNER JOIN `employees` ON `payslips`.`employee_id` = `employees`.`id`
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `payslips`.*, CONCAT(employees.last_name, \', \', `employees`.`first_name`, COALESCE(CONCAT(\' \', employees.middle_name), \'\')) as `employee_name`, `employees`.`code` as `employee_code`, `payrolls`.`code` as `payroll_code`, `payrolls`.`name` as `payroll_name`
+FROM `payslips`
+INNER JOIN `payrolls` ON `payslips`.`payroll_id` = `payrolls`.`id`
+INNER JOIN `employees` ON `payslips`.`employee_id` = `employees`.`id`
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `payslips`.*, CONCAT(employees.last_name, \', \', `employees`.`first_name`, COALESCE(CONCAT(\' \', employees.middle_name), \'\')) as `employee_name`, `employees`.`code` as `employee_code`, `payrolls`.`code` as `payroll_code`, `payrolls`.`name` as `payroll_name`
+FROM `payslips`
+INNER JOIN `payrolls` ON `payslips`.`payroll_id` = `payrolls`.`id`
+INNER JOIN `employees` ON `payslips`.`employee_id` = `employees`.`id`
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `payslips`.*, CONCAT(employees.last_name, \', \', `employees`.`first_name`, COALESCE(CONCAT(\' \', employees.middle_name), \'\')) as `employee_name`, `employees`.`code` as `employee_code`, `payrolls`.`code` as `payroll_code`, `payrolls`.`name` as `payroll_name`
+FROM `payslips`
+INNER JOIN `payrolls` ON `payslips`.`payroll_id` = `payrolls`.`id`
+INNER JOIN `employees` ON `payslips`.`employee_id` = `employees`.`id`
+ LIMIT 10', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(10, 0)
+ 7 SYSTEMPATH\BaseModel.php(1088): CodeIgniter\BaseModel->findAll(10, 0)
+ 8 APPPATH\Controllers\Main.php(492): CodeIgniter\BaseModel->paginate(10)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->payslips()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-23 13:25:06 --> Undefined variable $payslipss
+in APPPATH\Views\pages\payslips\list.php on line 32.
+ 1 APPPATH\Views\pages\payslips\list.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $payslipss', 'APPPATH\\Views\\pages\\payslips\\list.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\payslips\\list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/payslips/list', [], true)
+ 5 APPPATH\Controllers\Main.php(495): view('pages/payslips/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->payslips()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-23 14:45:50 --> Undefined array key "code"
+in APPPATH\Views\pages\payslips\list.php on line 54.
+ 1 APPPATH\Views\pages\payslips\list.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "code"', 'APPPATH\\Views\\pages\\payslips\\list.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\payslips\\list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/payslips/list', [], true)
+ 5 APPPATH\Controllers\Main.php(495): view('pages/payslips/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->payslips()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-23 14:58:39 --> Not unique table/alias: 'employees'
+CRITICAL - 2022-06-23 14:58:39 --> Not unique table/alias: 'employees'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `payslips`.*, CONCAT(payslips.last_name, \', \', `payslips`.`first_name`, COALESCE(CONCAT(\' \', payslips.middle_name), \'\')) as `name`, `employees`.`code`, CONCAT(departments.code, \' - \', departments.name) as department, CONCAT(designations.code, \' - \', designations.name) as designation, `payrolls`.`code` as `payroll_code`, `payrolls`.`title` as `payroll_name`
+FROM `employees`
+INNER JOIN `payrolls` ON `payslips`.`payroll_id` = `payrolls`.`id`
+INNER JOIN `employees` ON `payslips`.`employee_id` = `employees`.`id`
+INNER JOIN `departments` ON `employees`.`department_id` = `departments`.`id`
+INNER JOIN `designations` ON `employees`.`designation_id` = `designations`.`id`
+WHERE `payslips`.`id` = 1
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `payslips`.*, CONCAT(payslips.last_name, \', \', `payslips`.`first_name`, COALESCE(CONCAT(\' \', payslips.middle_name), \'\')) as `name`, `employees`.`code`, CONCAT(departments.code, \' - \', departments.name) as department, CONCAT(designations.code, \' - \', designations.name) as designation, `payrolls`.`code` as `payroll_code`, `payrolls`.`title` as `payroll_name`
+FROM `employees`
+INNER JOIN `payrolls` ON `payslips`.`payroll_id` = `payrolls`.`id`
+INNER JOIN `employees` ON `payslips`.`employee_id` = `employees`.`id`
+INNER JOIN `departments` ON `employees`.`department_id` = `departments`.`id`
+INNER JOIN `designations` ON `employees`.`designation_id` = `designations`.`id`
+WHERE `payslips`.`id` = 1
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `payslips`.*, CONCAT(payslips.last_name, \', \', `payslips`.`first_name`, COALESCE(CONCAT(\' \', payslips.middle_name), \'\')) as `name`, `employees`.`code`, CONCAT(departments.code, \' - \', departments.name) as department, CONCAT(designations.code, \' - \', designations.name) as designation, `payrolls`.`code` as `payroll_code`, `payrolls`.`title` as `payroll_name`
+FROM `employees`
+INNER JOIN `payrolls` ON `payslips`.`payroll_id` = `payrolls`.`id`
+INNER JOIN `employees` ON `payslips`.`employee_id` = `employees`.`id`
+INNER JOIN `departments` ON `employees`.`department_id` = `departments`.`id`
+INNER JOIN `designations` ON `employees`.`designation_id` = `designations`.`id`
+WHERE `payslips`.`id` = 1
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `payslips`.*, CONCAT(payslips.last_name, \', \', `payslips`.`first_name`, COALESCE(CONCAT(\' \', payslips.middle_name), \'\')) as `name`, `employees`.`code`, CONCAT(departments.code, \' - \', departments.name) as department, CONCAT(designations.code, \' - \', designations.name) as designation, `payrolls`.`code` as `payroll_code`, `payrolls`.`title` as `payroll_name`
+FROM `employees`
+INNER JOIN `payrolls` ON `payslips`.`payroll_id` = `payrolls`.`id`
+INNER JOIN `employees` ON `payslips`.`employee_id` = `employees`.`id`
+INNER JOIN `departments` ON `employees`.`department_id` = `departments`.`id`
+INNER JOIN `designations` ON `employees`.`designation_id` = `designations`.`id`
+WHERE `payslips`.`id` = 1
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Main.php(568): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->payslip_view('1')
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-23 14:59:05 --> Unknown column 'payslips.last_name' in 'field list'
+CRITICAL - 2022-06-23 14:59:05 --> Unknown column 'payslips.last_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `payslips`.*, CONCAT(payslips.last_name, \', \', `payslips`.`first_name`, COALESCE(CONCAT(\' \', payslips.middle_name), \'\')) as `name`, `employees`.`code`, CONCAT(departments.code, \' - \', departments.name) as department, CONCAT(designations.code, \' - \', designations.name) as designation, `payrolls`.`code` as `payroll_code`, `payrolls`.`title` as `payroll_name`
+FROM `payslips`
+INNER JOIN `payrolls` ON `payslips`.`payroll_id` = `payrolls`.`id`
+INNER JOIN `employees` ON `payslips`.`employee_id` = `employees`.`id`
+INNER JOIN `departments` ON `employees`.`department_id` = `departments`.`id`
+INNER JOIN `designations` ON `employees`.`designation_id` = `designations`.`id`
+WHERE `payslips`.`id` = 1
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `payslips`.*, CONCAT(payslips.last_name, \', \', `payslips`.`first_name`, COALESCE(CONCAT(\' \', payslips.middle_name), \'\')) as `name`, `employees`.`code`, CONCAT(departments.code, \' - \', departments.name) as department, CONCAT(designations.code, \' - \', designations.name) as designation, `payrolls`.`code` as `payroll_code`, `payrolls`.`title` as `payroll_name`
+FROM `payslips`
+INNER JOIN `payrolls` ON `payslips`.`payroll_id` = `payrolls`.`id`
+INNER JOIN `employees` ON `payslips`.`employee_id` = `employees`.`id`
+INNER JOIN `departments` ON `employees`.`department_id` = `departments`.`id`
+INNER JOIN `designations` ON `employees`.`designation_id` = `designations`.`id`
+WHERE `payslips`.`id` = 1
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `payslips`.*, CONCAT(payslips.last_name, \', \', `payslips`.`first_name`, COALESCE(CONCAT(\' \', payslips.middle_name), \'\')) as `name`, `employees`.`code`, CONCAT(departments.code, \' - \', departments.name) as department, CONCAT(designations.code, \' - \', designations.name) as designation, `payrolls`.`code` as `payroll_code`, `payrolls`.`title` as `payroll_name`
+FROM `payslips`
+INNER JOIN `payrolls` ON `payslips`.`payroll_id` = `payrolls`.`id`
+INNER JOIN `employees` ON `payslips`.`employee_id` = `employees`.`id`
+INNER JOIN `departments` ON `employees`.`department_id` = `departments`.`id`
+INNER JOIN `designations` ON `employees`.`designation_id` = `designations`.`id`
+WHERE `payslips`.`id` = 1
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `payslips`.*, CONCAT(payslips.last_name, \', \', `payslips`.`first_name`, COALESCE(CONCAT(\' \', payslips.middle_name), \'\')) as `name`, `employees`.`code`, CONCAT(departments.code, \' - \', departments.name) as department, CONCAT(designations.code, \' - \', designations.name) as designation, `payrolls`.`code` as `payroll_code`, `payrolls`.`title` as `payroll_name`
+FROM `payslips`
+INNER JOIN `payrolls` ON `payslips`.`payroll_id` = `payrolls`.`id`
+INNER JOIN `employees` ON `payslips`.`employee_id` = `employees`.`id`
+INNER JOIN `departments` ON `employees`.`department_id` = `departments`.`id`
+INNER JOIN `designations` ON `employees`.`designation_id` = `designations`.`id`
+WHERE `payslips`.`id` = 1
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Main.php(568): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->payslip_view('1')
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-23 15:06:04 --> foreach() argument must be of type array|object, int given
+in APPPATH\Views\pages\payslips\view.php on line 70.
+ 1 APPPATH\Views\pages\payslips\view.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, int given', 'APPPATH\\Views\\pages\\payslips\\view.php', 70)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\payslips\\view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/payslips/view', [], true)
+ 5 APPPATH\Controllers\Main.php(571): view('pages/payslips/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->payslip_view('1')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-23 15:13:18 --> foreach() argument must be of type array|object, int given
+in APPPATH\Views\pages\payslips\view.php on line 70.
+ 1 APPPATH\Views\pages\payslips\view.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, int given', 'APPPATH\\Views\\pages\\payslips\\view.php', 70)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\payslips\\view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/payslips/view', [], true)
+ 5 APPPATH\Controllers\Main.php(571): view('pages/payslips/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->payslip_view('1')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

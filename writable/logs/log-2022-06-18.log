@@ -1,0 +1,681 @@
+CRITICAL - 2022-06-18 11:08:56 --> session_start(): Failed to decode session object. Session has been destroyed
+in SYSTEMPATH\Session\Session.php on line 896.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_start(): Failed to decode session object. Session has been destroyed', 'SYSTEMPATH\\Session\\Session.php', 896)
+ 2 SYSTEMPATH\Session\Session.php(896): session_start()
+ 3 SYSTEMPATH\Session\Session.php(240): CodeIgniter\Session\Session->startSession()
+ 4 SYSTEMPATH\Config\Services.php(613): CodeIgniter\Session\Session->start()
+ 5 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 7 SYSTEMPATH\Config\Services.php(585): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 8 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\Services::session()
+ 9 SYSTEMPATH\Common.php(932): CodeIgniter\Config\BaseService::__callStatic('session', [])
+10 APPPATH\Controllers\Main.php(12): session()
+11 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Main->__construct()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+13 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 11:21:54 --> Undefined constant "Config\App"
+in SYSTEMPATH\Config\Factories.php on line 126.
+ 1 SYSTEMPATH\Common.php(198): CodeIgniter\Config\Factories::__callStatic('config', [])
+ 2 SYSTEMPATH\Config\Services.php(280): config('Filters')
+ 3 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\Services::filters(null, false)
+ 4 SYSTEMPATH\Config\BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('filters', [...])
+ 5 SYSTEMPATH\Config\Services.php(277): CodeIgniter\Config\BaseService::getSharedInstance('filters', null)
+ 6 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\Services::filters()
+ 7 SYSTEMPATH\CodeIgniter.php(420): CodeIgniter\Config\BaseService::__callStatic('filters', [])
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 11:23:18 --> Class "Config\App\Filters\Auth" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(440): CodeIgniter\Filters\Filters->run('/Main', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 11:34:34 --> Call to undefined function App\Controllers\views()
+in APPPATH\Controllers\Auth.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->register()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 11:34:45 --> Call to undefined function App\Controllers\views()
+in APPPATH\Controllers\Auth.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->register()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 11:35:24 --> Call to undefined function App\Controllers\views()
+in APPPATH\Controllers\Auth.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->register()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 11:35:36 --> Undefined variable $data
+in APPPATH\Views\auth\register.php on line 25.
+ 1 APPPATH\Views\auth\register.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\auth\\register.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\auth\\register.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('auth/register', [], true)
+ 5 APPPATH\Controllers\Auth.php(56): view('auth/register', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->register()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 11:36:08 --> Undefined variable $data
+in APPPATH\Views\auth\register.php on line 25.
+ 1 APPPATH\Views\auth\register.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\auth\\register.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\auth\\register.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('auth/register', [], true)
+ 5 APPPATH\Controllers\Auth.php(56): view('auth/register', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->register()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 12:00:20 --> Call to undefined method App\Models\Auth::getResult
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Auth.php(27): CodeIgniter\Model->__call('getResult', [])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 12:02:11 --> Call to undefined method App\Models\Auth::getRow
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Auth.php(27): CodeIgniter\Model->__call('getRow', [])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 12:02:40 --> Call to undefined method App\Models\Auth::getResults
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Auth.php(27): CodeIgniter\Model->__call('getResults', [])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 12:07:47 --> Call to undefined method App\Models\Auth::getResult
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Auth.php(25): CodeIgniter\Model->__call('getResult', [])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 12:08:14 --> Call to undefined method App\Models\Auth::getResultArray
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Auth.php(25): CodeIgniter\Model->__call('getResultArray', [])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 12:08:15 --> Call to undefined method App\Models\Auth::getResultArray
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Auth.php(25): CodeIgniter\Model->__call('getResultArray', [])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 12:08:53 --> Call to a member function countAllResults() on null
+in APPPATH\Controllers\Auth.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->index()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 12:10:09 --> Call to a member function getResult() on null
+in APPPATH\Controllers\Auth.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->index()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 13:11:51 --> syntax error, unexpected token "if"
+in APPPATH\Config\Routes.php on line 66.
+ 1 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 2 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 13:13:14 --> CodeIgniter\Router\RouteCollection::getFilterForRoute(): Return value must be of type string, array returned
+in SYSTEMPATH\Router\RouteCollection.php on line 1089.
+ 1 SYSTEMPATH\Router\Router.php(188): CodeIgniter\Router\RouteCollection->getFilterForRoute('Main')
+ 2 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('/Main')
+ 3 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 13:18:07 --> CodeIgniter\Router\RouteCollection::getFilterForRoute(): Return value must be of type string, array returned
+in SYSTEMPATH\Router\RouteCollection.php on line 1089.
+ 1 SYSTEMPATH\Router\Router.php(188): CodeIgniter\Router\RouteCollection->getFilterForRoute('Main')
+ 2 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('/Main')
+ 3 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 13:18:27 --> CodeIgniter\Router\RouteCollection::getFilterForRoute(): Return value must be of type string, array returned
+in SYSTEMPATH\Router\RouteCollection.php on line 1089.
+ 1 SYSTEMPATH\Router\Router.php(188): CodeIgniter\Router\RouteCollection->getFilterForRoute('Main')
+ 2 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('/Main')
+ 3 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 13:20:28 --> CodeIgniter\Router\RouteCollection::getFilterForRoute(): Return value must be of type string, array returned
+in SYSTEMPATH\Router\RouteCollection.php on line 1089.
+ 1 SYSTEMPATH\Router\Router.php(188): CodeIgniter\Router\RouteCollection->getFilterForRoute('Main')
+ 2 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('/Main')
+ 3 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 13:27:46 --> View themes, no current section.
+in SYSTEMPATH\View\View.php on line 392.
+ 1 APPPATH\Views\pages\home.php(9): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/home', [], true)
+ 5 APPPATH\Controllers\Main.php(20): view('pages/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 13:53:32 --> Undefined variable $data
+in APPPATH\Views\pages\users\edit.php on line 24.
+ 1 APPPATH\Views\pages\users\edit.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\pages\\users\\edit.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\users\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/users/edit', [], true)
+ 5 APPPATH\Controllers\Main.php(33): view('pages/users/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->user_edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 13:53:49 --> Array callback must have exactly two elements
+in APPPATH\Views\pages\users\edit.php on line 24.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/users/edit', [], true)
+ 4 APPPATH\Controllers\Main.php(33): view('pages/users/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->user_edit('2')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 13:55:08 --> Call to a member function first() on array
+in APPPATH\Controllers\Main.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->user_edit('2')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 13:58:45 --> Undefined property: App\Controllers\Main::$reques
+in APPPATH\Controllers\Main.php on line 31.
+ 1 APPPATH\Controllers\Main.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Main::$reques', 'APPPATH\\Controllers\\Main.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->user_edit('2')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 13:59:05 --> Undefined property: App\Controllers\Main::$reques
+in APPPATH\Controllers\Main.php on line 31.
+ 1 APPPATH\Controllers\Main.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Main::$reques', 'APPPATH\\Controllers\\Main.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->user_edit('2')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 13:59:58 --> Cannot access protected property CodeIgniter\HTTP\IncomingRequest::$method
+in APPPATH\Controllers\Main.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->user_edit('2')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 14:00:00 --> Cannot access protected property CodeIgniter\HTTP\IncomingRequest::$method
+in APPPATH\Controllers\Main.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->user_edit('2')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 14:00:22 --> Call to undefined method App\Controllers\Main::getPost()
+in APPPATH\Controllers\Main.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->user_edit('2')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 14:05:33 --> Undefined variable $data
+in APPPATH\Controllers\Main.php on line 43.
+ 1 APPPATH\Controllers\Main.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Main.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->user_edit('2')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 14:05:42 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1576.
+ 1 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Main.php(43): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->user_edit('2')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 14:06:05 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1576.
+ 1 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Main.php(43): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->user_edit('2')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 14:06:48 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1576.
+ 1 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Main.php(43): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->user_edit('2')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 14:09:12 -->  route cannot be found while reverse-routing.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 56.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('D:\\xampp\\htdocs\\ci4_ums')
+ 2 SYSTEMPATH\Common.php(863): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Main.php(46): redirect('Main/user_edit/2')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->user_edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 14:25:35 --> Undefined property: App\Controllers\Main::$pager
+in APPPATH\Controllers\Main.php on line 29.
+ 1 APPPATH\Controllers\Main.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Main::$pager', 'APPPATH\\Controllers\\Main.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->users()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 14:26:03 --> Call to a member function makeLinks() on int
+in APPPATH\Views\pages\users\list.php on line 53.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/users/list', [], true)
+ 4 APPPATH\Controllers\Main.php(30): view('pages/users/list', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->users()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 14:26:25 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\layouts\custom_pagination.php on line 43.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Pager\Pager.php(125): CodeIgniter\View\View->render('App\\Views\\layouts\\custom_pagination')
+ 4 SYSTEMPATH\Pager\Pager.php(110): CodeIgniter\Pager\Pager->displayLinks('default', 'custom_view')
+ 5 APPPATH\Views\pages\users\list.php(53): CodeIgniter\Pager\Pager->makeLinks(1, 10, 1, 'custom_view')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\users\\list.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/users/list', [], true)
+ 9 APPPATH\Controllers\Main.php(30): view('pages/users/list', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->users()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 14:28:45 --> count(): Argument #1 ($value) must be of type Countable|array, int given
+in APPPATH\Views\layouts\custom_pagination.php on line 43.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Pager\Pager.php(125): CodeIgniter\View\View->render('App\\Views\\layouts\\custom_pagination')
+ 4 SYSTEMPATH\Pager\Pager.php(110): CodeIgniter\Pager\Pager->displayLinks('default', 'custom_view')
+ 5 APPPATH\Views\pages\users\list.php(53): CodeIgniter\Pager\Pager->makeLinks(1, 10, 1, 'custom_view')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\users\\list.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/users/list', [], true)
+ 9 APPPATH\Controllers\Main.php(31): view('pages/users/list', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->users()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 14:29:03 --> count(): Argument #1 ($value) must be of type Countable|array, int given
+in APPPATH\Views\layouts\custom_pagination.php on line 43.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Pager\Pager.php(125): CodeIgniter\View\View->render('App\\Views\\layouts\\custom_pagination')
+ 4 SYSTEMPATH\Pager\Pager.php(110): CodeIgniter\Pager\Pager->displayLinks('default', 'custom_view')
+ 5 APPPATH\Views\pages\users\list.php(53): CodeIgniter\Pager\Pager->makeLinks(1, 10, 1, 'custom_view')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\users\\list.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/users/list', [], true)
+ 9 APPPATH\Controllers\Main.php(31): view('pages/users/list', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->users()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 14:30:07 --> count(): Argument #1 ($value) must be of type Countable|array, int given
+in APPPATH\Views\layouts\custom_pagination.php on line 43.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Pager\Pager.php(125): CodeIgniter\View\View->render('App\\Views\\layouts\\custom_pagination')
+ 4 SYSTEMPATH\Pager\Pager.php(110): CodeIgniter\Pager\Pager->displayLinks('default', 'custom_view')
+ 5 APPPATH\Views\pages\users\list.php(53): CodeIgniter\Pager\Pager->makeLinks(1, 10, 1, 'custom_view')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\users\\list.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/users/list', [], true)
+ 9 APPPATH\Controllers\Main.php(31): view('pages/users/list', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->users()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 14:30:55 --> authenticated filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('authenticated')
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->enableFilter('authenticated', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 14:31:20 --> authenticated filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('authenticated')
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->enableFilter('authenticated', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 14:38:50 --> Undefined property: App\Controllers\Auth::$session
+in APPPATH\Controllers\Auth.php on line 112.
+ 1 APPPATH\Controllers\Auth.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auth::$session', 'APPPATH\\Controllers\\Auth.php', 112)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->update_user()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 14:39:37 --> Undefined variable $session
+in APPPATH\Views\pages\users\update_account.php on line 13.
+ 1 APPPATH\Views\pages\users\update_account.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Views\\pages\\users\\update_account.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\users\\update_account.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/users/update_account', [], true)
+ 5 APPPATH\Controllers\Auth.php(114): view('pages/users/update_account', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->update_user()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 14:39:48 --> Undefined variable $session
+in APPPATH\Views\pages\users\update_account.php on line 13.
+ 1 APPPATH\Views\pages\users\update_account.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Views\\pages\\users\\update_account.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\users\\update_account.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/users/update_account', [], true)
+ 5 APPPATH\Controllers\Auth.php(114): view('pages/users/update_account', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->update_user()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 14:44:44 --> Undefined variable $id
+in APPPATH\Controllers\Auth.php on line 105.
+ 1 APPPATH\Controllers\Auth.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Auth.php', 105)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->update_user()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 14:45:07 --> Undefined variable $id
+in APPPATH\Controllers\Auth.php on line 105.
+ 1 APPPATH\Controllers\Auth.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Auth.php', 105)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->update_user()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-18 15:43:48 --> Table 'ums_db.users' doesn't exist
+CRITICAL - 2022-06-18 16:26:52 --> Undefined array key "status"
+in APPPATH\Controllers\Auth.php on line 29.
+ 1 APPPATH\Controllers\Auth.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'APPPATH\\Controllers\\Auth.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 16:28:15 --> Undefined variable $users
+in APPPATH\Views\pages\employees\list.php on line 20.
+ 1 APPPATH\Views\pages\employees\list.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'APPPATH\\Views\\pages\\employees\\list.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\employees\\list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/employees/list', [], true)
+ 5 APPPATH\Controllers\Main.php(85): view('pages/employees/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->employees()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-18 16:29:52 --> Unknown column 'last_name' in 'field list'
+CRITICAL - 2022-06-18 16:29:52 --> Unknown column 'last_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, CONCAT(last_name, \', \', `first_name`, COALESCE(CONCAT(\' \', middle_name), \'\')) as `name`
+FROM `users`
+WHERE `id` != \'1\'
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, CONCAT(last_name, \', \', `first_name`, COALESCE(CONCAT(\' \', middle_name), \'\')) as `name`
+FROM `users`
+WHERE `id` != \'1\'
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, CONCAT(last_name, \', \', `first_name`, COALESCE(CONCAT(\' \', middle_name), \'\')) as `name`
+FROM `users`
+WHERE `id` != \'1\'
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *, CONCAT(last_name, \', \', `first_name`, COALESCE(CONCAT(\' \', middle_name), \'\')) as `name`
+FROM `users`
+WHERE `id` != \'1\'
+ LIMIT 10', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(10, 0)
+ 7 SYSTEMPATH\BaseModel.php(1088): CodeIgniter\BaseModel->findAll(10, 0)
+ 8 APPPATH\Controllers\Main.php(82): CodeIgniter\BaseModel->paginate(10)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->employees()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 16:30:39 --> Undefined array key "email"
+in APPPATH\Views\pages\employees\list.php on line 29.
+ 1 APPPATH\Views\pages\employees\list.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'APPPATH\\Views\\pages\\employees\\list.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\employees\\list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/employees/list', [], true)
+ 5 APPPATH\Controllers\Main.php(87): view('pages/employees/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->employees()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 16:36:52 --> Undefined variable $password
+in APPPATH\Controllers\Main.php on line 94.
+ 1 APPPATH\Controllers\Main.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $password', 'APPPATH\\Controllers\\Main.php', 94)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->employee_edit('1')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 16:37:14 --> Undefined variable $name
+in APPPATH\Controllers\Main.php on line 96.
+ 1 APPPATH\Controllers\Main.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'APPPATH\\Controllers\\Main.php', 96)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->employee_edit('1')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 16:37:45 --> Undefined variable $email
+in APPPATH\Controllers\Main.php on line 101.
+ 1 APPPATH\Controllers\Main.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'APPPATH\\Controllers\\Main.php', 101)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->employee_edit('1')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 16:44:48 --> Undefined variable $id
+in APPPATH\Controllers\Main.php on line 103.
+ 1 APPPATH\Controllers\Main.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Main.php', 103)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->employee_add('$1')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-18 17:06:43 --> Can't create table `eams_db`.`attendance` (errno: 150 "Foreign key constraint is incorrectly formed")
+ERROR - 2022-06-18 17:11:02 --> Can't create table `eams_db`.`attendance` (errno: 150 "Foreign key constraint is incorrectly formed")
+ERROR - 2022-06-18 17:12:03 --> Can't create table `eams_db`.`attendance` (errno: 150 "Foreign key constraint is incorrectly formed")
+ERROR - 2022-06-18 17:13:18 --> Can't create table `eams_db`.`attendance` (errno: 150 "Foreign key constraint is incorrectly formed")
+ERROR - 2022-06-18 17:14:29 --> Can't create table `eams_db`.`attendance` (errno: 150 "Foreign key constraint is incorrectly formed")
+ERROR - 2022-06-18 17:15:05 --> Can't create table `eams_db`.`attendance` (errno: 150 "Foreign key constraint is incorrectly formed")
+ERROR - 2022-06-18 17:15:41 --> Can't create table `eams_db`.`attendance` (errno: 150 "Foreign key constraint is incorrectly formed")
+ERROR - 2022-06-18 17:16:11 --> Can't create table `eams_db`.`attendance` (errno: 150 "Foreign key constraint is incorrectly formed")
+ERROR - 2022-06-18 17:19:15 --> Can't create table `eams_db`.`attendance` (errno: 150 "Foreign key constraint is incorrectly formed")
+ERROR - 2022-06-18 17:20:22 --> Can't create table `eams_db`.`attendance` (errno: 150 "Foreign key constraint is incorrectly formed")
+ERROR - 2022-06-18 17:22:52 --> Incorrect table definition; there can be only one auto column and it must be defined as a key
+ERROR - 2022-06-18 17:23:34 --> Incorrect table definition; there can be only one auto column and it must be defined as a key
+ERROR - 2022-06-18 17:24:34 --> Can't create table `eams_db`.`attendance` (errno: 150 "Foreign key constraint is incorrectly formed")
+ERROR - 2022-06-18 17:25:14 --> Can't create table `eams_db`.`attendance` (errno: 150 "Foreign key constraint is incorrectly formed")
+ERROR - 2022-06-18 17:34:20 --> Table 'attendance' already exists
+ERROR - 2022-06-18 17:35:09 --> Table 'attendance' already exists
+ERROR - 2022-06-18 17:36:09 --> Table 'attendance' already exists
+ERROR - 2022-06-18 17:36:56 --> Table 'attendance' already exists
+ERROR - 2022-06-18 17:39:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(30)) NOT NULL,
+	created_at datetime default current_timestamp,
+	`log_type` T...' at line 3
+ERROR - 2022-06-18 17:39:52 --> Table 'attendance' already exists
+ERROR - 2022-06-18 17:40:51 --> Table 'attendance' already exists
+CRITICAL - 2022-06-18 17:54:06 --> Undefined variable $data
+in APPPATH\Views\pages\attendance.php on line 26.
+ 1 APPPATH\Views\pages\attendance.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\pages\\attendance.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\attendance.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/attendance', [], true)
+ 5 APPPATH\Controllers\Attendance.php(23): view('pages/attendance', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Attendance->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attendance))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 18:00:17 --> Undefined property: CodeIgniter\HTTP\IncomingRequest::$getMethod
+in APPPATH\Controllers\Attendance.php on line 25.
+ 1 APPPATH\Controllers\Attendance.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\IncomingRequest::$getMethod', 'APPPATH\\Controllers\\Attendance.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Attendance->add()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attendance))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 18:09:36 --> Call to undefined method App\Models\Employee::countAllResult
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Attendance.php(37): CodeIgniter\Model->__call('countAllResult', [])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Attendance->add()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attendance))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-18 18:09:45 --> Unknown column 'employee_id' in 'where clause'
+CRITICAL - 2022-06-18 18:09:45 --> Unknown column 'employee_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `employees`
+WHERE `employee_id` = \'1\'
+AND `log_type` = 1
+AND date(`created_at`) = \'2022-06-18\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `employees`
+WHERE `employee_id` = \'1\'
+AND `log_type` = 1
+AND date(`created_at`) = \'2022-06-18\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `employees`
+WHERE `employee_id` = \'1\'
+AND `log_type` = 1
+AND date(`created_at`) = \'2022-06-18\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `employees`
+WHERE `employee_id` = :employee_id:
+AND `log_type` = :log_type:
+AND date(`created_at`) = :date(`created_at`):', [...], false)
+ 5 SYSTEMPATH\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Attendance.php(37): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Attendance->add()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attendance))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-18 18:10:56 --> Table 'eams_db.attendances' doesn't exist
+CRITICAL - 2022-06-18 18:10:56 --> Table 'eams_db.attendances' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `attendances`
+WHERE `employee_id` = \'1\'
+AND `log_type` = 1
+AND date(`created_at`) = \'2022-06-18\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `attendances`
+WHERE `employee_id` = \'1\'
+AND `log_type` = 1
+AND date(`created_at`) = \'2022-06-18\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `attendances`
+WHERE `employee_id` = \'1\'
+AND `log_type` = 1
+AND date(`created_at`) = \'2022-06-18\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `attendances`
+WHERE `employee_id` = :employee_id:
+AND `log_type` = :log_type:
+AND date(`created_at`) = :date(`created_at`):', [...], false)
+ 5 SYSTEMPATH\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Attendance.php(39): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Attendance->add()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attendance))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 18:11:11 --> Undefined variable $his
+in APPPATH\Controllers\Attendance.php on line 43.
+ 1 APPPATH\Controllers\Attendance.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $his', 'APPPATH\\Controllers\\Attendance.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Attendance->add()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attendance))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-18 18:20:28 --> Unknown column 'INNER' in 'from clause'
+CRITICAL - 2022-06-18 18:20:28 --> Unknown column 'INNER' in 'from clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `attendance`
+JOIN `employees` USING (`INNER`)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `attendance`
+JOIN `employees` USING (`INNER`)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `attendance`
+JOIN `employees` USING (`INNER`)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `attendance`
+JOIN `employees` USING (`INNER`)', [], false)
+ 5 SYSTEMPATH\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Main.php(202): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->attendances()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-18 18:22:07 --> Unknown column 'employee.employee_code' in 'field list'
+CRITICAL - 2022-06-18 18:22:07 --> Unknown column 'employee.employee_code' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `attendance`.*, `employee`.`employee_code`, CONCAT(`employee`.last_name, \', \', `employee`.`first_name`, COALESCE(CONCAT(\' \', `employee`.middle_name), \'\')) as `name`
+FROM `attendance`
+INNER JOIN `employees` ON `attendance`.`employee_id` = `employees`.`id`
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `attendance`.*, `employee`.`employee_code`, CONCAT(`employee`.last_name, \', \', `employee`.`first_name`, COALESCE(CONCAT(\' \', `employee`.middle_name), \'\')) as `name`
+FROM `attendance`
+INNER JOIN `employees` ON `attendance`.`employee_id` = `employees`.`id`
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `attendance`.*, `employee`.`employee_code`, CONCAT(`employee`.last_name, \', \', `employee`.`first_name`, COALESCE(CONCAT(\' \', `employee`.middle_name), \'\')) as `name`
+FROM `attendance`
+INNER JOIN `employees` ON `attendance`.`employee_id` = `employees`.`id`
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `attendance`.*, `employee`.`employee_code`, CONCAT(`employee`.last_name, \', \', `employee`.`first_name`, COALESCE(CONCAT(\' \', `employee`.middle_name), \'\')) as `name`
+FROM `attendance`
+INNER JOIN `employees` ON `attendance`.`employee_id` = `employees`.`id`
+ LIMIT 10', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(10, 0)
+ 7 SYSTEMPATH\BaseModel.php(1088): CodeIgniter\BaseModel->findAll(10, 0)
+ 8 APPPATH\Controllers\Main.php(202): CodeIgniter\BaseModel->paginate(10)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->attendances()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-18 18:22:21 --> Unknown column 'employees.employee_code' in 'field list'
+CRITICAL - 2022-06-18 18:22:21 --> Unknown column 'employees.employee_code' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `attendance`.*, `employees`.`employee_code`, CONCAT(`employees`.last_name, \', \', `employees`.`first_name`, COALESCE(CONCAT(\' \', `employees`.middle_name), \'\')) as `name`
+FROM `attendance`
+INNER JOIN `employees` ON `attendance`.`employee_id` = `employees`.`id`
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `attendance`.*, `employees`.`employee_code`, CONCAT(`employees`.last_name, \', \', `employees`.`first_name`, COALESCE(CONCAT(\' \', `employees`.middle_name), \'\')) as `name`
+FROM `attendance`
+INNER JOIN `employees` ON `attendance`.`employee_id` = `employees`.`id`
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `attendance`.*, `employees`.`employee_code`, CONCAT(`employees`.last_name, \', \', `employees`.`first_name`, COALESCE(CONCAT(\' \', `employees`.middle_name), \'\')) as `name`
+FROM `attendance`
+INNER JOIN `employees` ON `attendance`.`employee_id` = `employees`.`id`
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `attendance`.*, `employees`.`employee_code`, CONCAT(`employees`.last_name, \', \', `employees`.`first_name`, COALESCE(CONCAT(\' \', `employees`.middle_name), \'\')) as `name`
+FROM `attendance`
+INNER JOIN `employees` ON `attendance`.`employee_id` = `employees`.`id`
+ LIMIT 10', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(10, 0)
+ 7 SYSTEMPATH\BaseModel.php(1088): CodeIgniter\BaseModel->findAll(10, 0)
+ 8 APPPATH\Controllers\Main.php(202): CodeIgniter\BaseModel->paginate(10)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Main->attendances()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

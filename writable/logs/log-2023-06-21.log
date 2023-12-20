@@ -1,0 +1,37 @@
+CRITICAL - 2023-06-21 08:03:53 --> Call to undefined function CodeIgniter\locale_set_default()
+in SYSTEMPATH\CodeIgniter.php on line 193.
+ 1 FCPATH\index.php(43): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-06-21 08:03:53 --> Call to undefined function CodeIgniter\locale_set_default()
+in SYSTEMPATH\CodeIgniter.php on line 193.
+ 1 FCPATH\index.php(43): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-06-21 08:03:54 --> Call to undefined function CodeIgniter\locale_set_default()
+in SYSTEMPATH\CodeIgniter.php on line 193.
+ 1 FCPATH\index.php(43): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-06-21 14:09:17 --> Creation of dynamic property App\Controllers\Main::$session is deprecated
+in APPPATH\Controllers\Main.php on line 19.
+ 1 APPPATH\Controllers\Main.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\Main::$session is deprecated', 'APPPATH\\Controllers\\Main.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(860): App\Controllers\Main->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(459): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-21 14:09:17 --> Creation of dynamic property App\Controllers\Main::$session is deprecated
+in APPPATH\Controllers\Main.php on line 19.
+ 1 APPPATH\Controllers\Main.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\Main::$session is deprecated', 'APPPATH\\Controllers\\Main.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(860): App\Controllers\Main->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(459): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-21 14:38:10 --> Creation of dynamic property App\Controllers\Auth::$data is deprecated
+in APPPATH\Controllers\Auth.php on line 78.
+ 1 APPPATH\Controllers\Auth.php(78): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\Auth::$data is deprecated', 'APPPATH\\Controllers\\Auth.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Auth->update_user()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-21 14:38:10 --> Creation of dynamic property App\Controllers\Auth::$data is deprecated
+in APPPATH\Controllers\Auth.php on line 78.
+ 1 APPPATH\Controllers\Auth.php(78): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\Auth::$data is deprecated', 'APPPATH\\Controllers\\Auth.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Auth->update_user()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
